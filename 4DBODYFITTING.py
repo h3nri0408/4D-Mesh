@@ -597,5 +597,18 @@ for node_id, node_data in node_info.items():
 #         output_file.write(f"{node_id} {coordinates[0]} {coordinates[1]} {coordinates[2]} {coordinates[3]}\n")
 
 
+# @article{BeOlSc2022,
+#   author    = {Nathan Bell and Luke N. Olson and Jacob Schroder},
+#   title     = {{PyAMG}: Algebraic Multigrid Solvers in Python},
+#   journal   = {Journal of Open Source Software},
+#   year      = {2022},
+#   publisher = {The Open Journal},
+#   volume    = {7},
+#   number    = {72},
+#   pages     = {4142},
+#   doi       = {10.21105/joss.04142},
+#   url       = {https://doi.org/10.21105/joss.04142},
+# }
+
 
 

@@ -112,29 +112,3 @@ for connections in pattern_connections:
 np.savetxt("pattern_nodes.txt", unique_nodes, delimiter=",")
 plt.show()
 
-# unique_nodes = []
-# for node in nodes:
-#     if tuple(node) not in unique_nodes:
-#         unique_nodes.append(tuple(node))
-
-# unique_nodes = np.array(unique_nodes)
-
-##3D OBJECT DOWNLOAD
-import trimesh
-from scipy.spatial import Delaunay
-
-# Create a list of faces from the connections
-vertices = pattern_nodes
-faces = np.array(pattern_connections)
-
-# Delaunay triangulation
-tri = Delaunay(vertices[:, :2])
-
-# Create a mesh from the vertices and faces
-mesh = trimesh.Trimesh(vertices=vertices, faces=faces)
-
-# Save the mesh to an STL file
-mesh.export('3d_pattern.stl', file_type='stl')
-
-plt.show()
-

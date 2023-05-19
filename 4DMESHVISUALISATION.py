@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 # Leggi i dati dal file .txt
 ##CHANGE IMPORTED FILE NAME IF YOU WANT TO SEE ORIGINAL DISCONNECTED NODES.
-with open('ORIGINAL4DMESH.txt', 'r') as f:
+with open('NEW4DMESH.txt', 'r') as f:
     lines = f.readlines()
 # Salva i dati in due liste separate
 simplices = [list(map(int, l.strip().split())) for l in lines[5:3701]]

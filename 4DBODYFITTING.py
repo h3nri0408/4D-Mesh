@@ -69,8 +69,7 @@ f[:, :, :, -1] = 0
 num_levels = 16
 #x, y, z, w, phi  = poisson_solver(f, dx, dy, dz, dw, nx, ny, nz, nw, num_levels)
 
-#I SCALED THE PROBLEM IN LINE 92 SOT THE CONTINUE OF POISSONS EQUATION IS IN LINE 92 TO 116
-
+#I SCALED THE PROBLEM IN LINE 92 SO THE CONTINUE OF POISSONS EQUATION IS IN LINE 92 TO 116
 
 #IMPORTING 4D MESH FILE. THIS CURRENTLY IS MESHSSK3 WHICH IS THE ONE MODIFIED BY ME.
 import plotly.graph_objs as go

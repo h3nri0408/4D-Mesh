@@ -85,8 +85,10 @@ import itertools
 with open('NEW4DMESH.txt', 'r') as f:
     lines = f.readlines()
 # Salva i dati in due liste separate
+## FOR ORIGINAL MESH
 # simplices = [list(map(int, l.strip().split())) for l in lines[5:3557]]
 # nodes = [list(map(float, l.strip().split())) for l in lines[3561:4032]]
+##FOR NEW MESH
 simplices = [list(map(int, l.strip().split())) for l in lines[5:3701]]
 nodes = [list(map(float, l.strip().split())) for l in lines[3705:4176]]
 # Crea un dizionario per il mesh 4D

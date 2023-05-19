@@ -81,7 +81,8 @@ import itertools
 
 #this part exports the mesh file and makes a dictionary to put simplices and node coordinates. each simplex and node has an ID
 # Leggi i dati dal file .txt
-with open('MeshPatch4D_SSK3.txt', 'r') as f:
+##CHANGE INPUT FILE NAME TO ORIGINAL4DMESH.txt IF YOU WANT TO USE THE ORIGINAL MESH WITH DISCONNECTED NODES
+with open('NEW4DMESH.txt', 'r') as f:
     lines = f.readlines()
 # Salva i dati in due liste separate
 # simplices = [list(map(int, l.strip().split())) for l in lines[5:3557]]
